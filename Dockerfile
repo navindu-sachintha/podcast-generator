@@ -1,9 +1,15 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
+    software-properties-common && \
+    add-apt-repository ppa:deadsnakes/ppa && \
+    apt-get update && apt-get install -y \
     python3.10 \
+    python3.10-distutils \
     python3-pip \
-    git 
+    git \
+    build-essential && \
+    apt-get clean
     
 # Install PyYAML
 RUN pip3 install PyYAML
