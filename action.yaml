@@ -1,4 +1,4 @@
-name: "Podcast Feed Generator"
+name: "Podcast RSS Feed generator with github actions"
 author: "Navindu Sachintha"
 description: "Generates RSS feed for podcast from a YAML file"
 
